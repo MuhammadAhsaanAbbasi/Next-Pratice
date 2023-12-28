@@ -9,28 +9,37 @@ import TodoItem from './component/todocontent/todoItem'
 import { useRouter } from 'next/navigation'
 
 const Home = () => {
-  const {push, back, } = useRouter()
-  const isLoggIn = true
-  const handleRedirect = () =>{
-    if(isLoggIn){
-      push('/dashboard')
-    }else{
-      push('/login')
-    }
-  }
-  return(
-    <main>
-      <button onClick={handleRedirect} className='p-4 m-4 bg-blue-500'>
-        Dashboard
-      </button>
-    </main>
+  return (
+    <div>Home</div>
   )
 }
 
 export default Home
 
+// const Home = () => {
+//   const {push, back, } = useRouter()
+//   const isLoggIn = true
+//   const handleRedirect = () =>{
+//     if(isLoggIn){
+//       push('/dashboard')
+//     }else{
+//       push('/login')
+//     }
+//   }
+//   return(
+//     <main>
+//       <button onClick={handleRedirect} className='p-4 m-4 bg-blue-500'>
+//         Dashboard
+//       </button>
+//     </main>
+//   )
+// }
+
+// export default Home
 
 
+
+// Context Api Todo App
 
   // const [todos,setTodos] = useState<any>([])
   
