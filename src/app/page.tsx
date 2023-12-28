@@ -1,16 +1,14 @@
 "use client"
 import { useEffect, useState } from 'react'
-// import ThemeBtn from './component/themebtn'
-// import Cardui from './component/cardui'
-// import { ThemeProvider } from './component/themecontent'
-import { TodoProvider } from './component/todocontent/todocontent'
-import TodoForm from './component/todocontent/todoform'
-import TodoItem from './component/todocontent/todoItem'
-import { useRouter } from 'next/navigation'
+import Addtodo from "./component/todos/Addtodo"
+import Todos from './component/todos/Todos'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <Addtodo/>
+    <Todos/>
+    </>
   )
 }
 
@@ -125,3 +123,10 @@ export default Home
 
 //   )
 // }
+// import ThemeBtn from './component/themebtn'
+// import Cardui from './component/cardui'
+// import { ThemeProvider } from './component/themecontent'
+// import { TodoProvider } from './component/todocontent/todocontent'
+// import TodoForm from './component/todocontent/todoform'
+// import TodoItem from './component/todocontent/todoItem'
+// import { useRouter } from 'next/navigation'
