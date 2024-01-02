@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,7 +18,6 @@ const BooksPage = async () => {
     return (
         <div>
             <p>BooksPage</p>
-
             {
                 book.map((book)=>(
                     <Link key={book.id} href={`/books/${book.id}`}>

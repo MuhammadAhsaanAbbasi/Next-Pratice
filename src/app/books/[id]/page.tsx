@@ -15,6 +15,7 @@ interface Ibook {
     'current-stock':number,
     available:boolean
 }
+
 const page = async  ({params}:Iprops) => {
     const response = await fetch(`${url}/books/${params.id}`)
     const book:Ibook = await response.json()

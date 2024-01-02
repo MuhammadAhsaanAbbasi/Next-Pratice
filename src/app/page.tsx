@@ -1,18 +1,25 @@
-"use client"
+// "use client"
+// import Addtodo from "./component/todos/Addtodo"
+// import Todos from './component/todos/Todos'
 import { useEffect, useState } from 'react'
-import Addtodo from "./component/todos/Addtodo"
-import Todos from './component/todos/Todos'
+import Link from 'next/link'
 
 const Home = () => {
   return (
     <>
-    <Addtodo/>
-    <Todos/>
+    <div>
+      <Link href={"/books"}>
+      Hijabie Chuzzi
+      </Link>
+    </div>
     </>
   )
 }
 
 export default Home
+
+{/* <Addtodo/>
+<Todos/> */}
 
 // const Home = () => {
 //   const {push, back, } = useRouter()
